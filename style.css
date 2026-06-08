@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap:3rem
+}
+
+.liquid {
+    width: 100%;
+    height: 70%;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.liquid-red {
+    background-color: rgb(223, 106, 100);
+}
+
+.liquid-green {
+    background-color: rgb(126, 214, 99);
+}
+
+
+.glass-a-btn,
+.glass-b-btn,
+.glass-c-btn {
+    height: 16rem;
+    width: 5rem;
+    display: flex;
+    padding: 0;
+    position: relative;
+    align-items: flex-end;
+    background-color: rgb(241, 245, 255);
+    overflow: hidden;
+    border: 1px solid rgb(221, 230, 255);
+    border-top: none;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.glass-a-btn > span,
+.glass-b-btn > span,
+.glass-c-btn > span {
+    position: absolute;
+    z-index: 10;
+    top: 40%;
+    left: 50%;
+    font-size: 20px;
+    color: white;
+}
+
+.glass-a-btn > span:last-of-type,
+.glass-b-btn > span:last-of-type,
+.glass-c-btn > span:last-of-type {
+    top: 45%;
+    left: 52%;
+}
